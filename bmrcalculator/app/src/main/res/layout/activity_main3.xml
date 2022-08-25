@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="198dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="30dp"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/showname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <TextView
+        android:id="@+id/nametext2"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="26dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bmitext"
+        app:layout_constraintEnd_toStartOf="@+id/showname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/bmitext"
+        android:layout_width="86dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="20dp"
+        android:text="BMI"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bmrtext2"
+        app:layout_constraintEnd_toStartOf="@+id/showbmi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametext2" />
+
+    <TextView
+        android:id="@+id/bmrtext2"
+        android:layout_width="86dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="65dp"
+        android:text="BMR"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_save"
+        app:layout_constraintEnd_toStartOf="@+id/showbmr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmitext" />
+
+    <TextView
+        android:id="@+id/showname"
+        android:layout_width="140dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/showbmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nametext2"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/showbmi"
+        android:layout_width="140dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/showbmr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bmitext"
+        app:layout_constraintTop_toBottomOf="@+id/showname" />
+
+    <TextView
+        android:id="@+id/showbmr"
+        android:layout_width="140dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="60dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/save_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bmrtext2"
+        app:layout_constraintTop_toBottomOf="@+id/showbmi" />
+
+    <Button
+        android:id="@+id/cancel_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="184dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save_result"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="184dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cancel_save" />
+</androidx.constraintlayout.widget.ConstraintLayout>
